@@ -127,7 +127,7 @@ public class Ticket implements Runnable{
 }
 ```
 
-## 同步方法
+#### 同步方法
 使用synchronized修饰的方法,就叫做同步方法,保证A线程执行该方法的时候,其他线程只能在方法外等着。
 格式：
 ```java
@@ -178,7 +178,7 @@ public class Ticket02 implements Runnable {
 }
 ```
 
-## Lock 锁
+#### Lock 锁
 java.util.concurrent.locks.Lock 机制提供了比synchronized代码块和synchronized方法更广泛的锁定操作,同步代码块/同步方法具有的功能Lock都有,除此之外更强大,更体现面向对象。Lock锁也称同步锁，加锁与释放锁方法化了，如下：
 - public void lock() :加同步锁。
 - public void unlock() :释放同步锁。
